@@ -3,7 +3,8 @@
 Launch build:
 
 ````
-mvn install -Pnative 
+mvn -Pnative spring-boot:build-image
+docker run --rm -p 8090:8080 'docker.io/sebge2/spring-boot-6-hands-on:latest'
 ````
 
 Links:
